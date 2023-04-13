@@ -6,7 +6,7 @@ import os
 
 import pandas as pd
 
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegression, train_test_split
 
 
 # define functions
