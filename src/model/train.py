@@ -34,7 +34,14 @@ def get_csvs_df(path):
 
 
 # TO DO: add function to split data
+def split_data(dataFrame)
+    # split data
+    X = df.drop('Y', axis=1).values
+    y = df['Y'].values
 
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+    
+    return X_train, X_test, y_train, y_test
 
 def train_model(reg_rate, X_train, X_test, y_train, y_test):
     # train model
